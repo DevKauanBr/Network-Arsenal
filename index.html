@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Arsenal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="image.png" alt="logo">
+    </div>
+
+    <h1>Keep the network's arsenal running by helping us with bitcoins</h1>
+    <p>Bitcoin address</p>
+    <input type="text" name="" id="bitcoins">
+    <br>
+    <input type="button" value="Make payment" class="make" onclick="bitcoinpay()">
+
+    <div id="one">
+        <h1>Denial of Service Attack (DDOS)</h1>
+        <p>IP Address</p>
+        <input type="text" name="" id="ipadd" class="pad1">
+        <p>Port</p>
+        <input type="text" name="" id="port" class="pad1">
+        <br>
+        <input type="button" value="Attack" class="make1" onclick="ddosattack()">
+        <br>
+        <textarea id="cmddos" spellcheck="false" disabled>script started 
+waiting for ip and port...
+        </textarea>
+        <div class="aviso">
+            <p>&#x1F53A; It is not possible to stop the script execution once it has started, only when 5000 bots have been injected into the server.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

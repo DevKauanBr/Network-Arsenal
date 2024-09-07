@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+input[type='text']{
+    outline: none;
+}
+
+
+#logo{
+    text-align: center;
+}
+
+.make{
+    background-color: rgb(3, 150, 3);
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.make:hover{
+    background-color: green;
+}
+
+.make:active{
+    background-color: rgb(3, 150, 3);
+}
+
+.make1{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.make1:hover{
+    background-color: rgb(150, 17, 0);
+}
+
+.make1:active{
+    background-color: rgb(0, 0, 0);
+}
+
+#bitcoins{
+    width: 160px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.pad1{
+    width: 160px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#cmddos{
+    width: 340px;
+    height: 240px;
+    background-color: black;
+    color: #029702;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.aviso{
+    background-color: rgba(255, 0, 0, 0.452);
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
