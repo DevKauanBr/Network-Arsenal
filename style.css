@@ -83,3 +83,59 @@ input[type='text']{
     border-radius: 10px;
     margin-top: 10px;
 }
+
+#one, #two{
+    margin-top: 100px;
+}
+
+#car1{
+    color: red;
+}
+
+#two select{
+    width: 165px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(63, 63, 209);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+#two input[type='button']{
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#divpn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(165, 4, 4);
+    border: 0;
+    border-radius: 5px;
+    display: none;
+}
+
+#divpn:hover{
+    background-color: red;
+}
+
+#divpn:active{
+    background-color: rgb(165, 4, 4);
+}
+
+#covpn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(63, 63, 209);
+    border: 0;
+    border-radius: 5px;
+}
+
+#covpn:hover{
+    background-color: rgb(20, 20, 145);
+}
+
+#covpn:active{
+    background-color: rgb(63, 63, 209);
+}

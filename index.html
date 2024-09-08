@@ -11,6 +11,10 @@
         <img src="image.png" alt="logo">
     </div>
 
+    <marquee behavior="scroll" direction="right" id="car1" scrollamount="10">We are not responsible for your actions</marquee>
+
+    <marquee behavior="scroll" direction="right" id="car2" scrollamount="9">United as one, divided by zero.</marquee>
+
     <h1>Keep the network's arsenal running by helping us with bitcoins</h1>
     <p>Bitcoin address</p>
     <input type="text" name="" id="bitcoins">
@@ -31,6 +35,21 @@ waiting for ip and port...
         </textarea>
         <div class="aviso">
             <p>&#x1F53A; It is not possible to stop the script execution once it has started, only when 5000 bots have been injected into the server.</p>
+        </div>
+
+        <div id="two">
+            <h1>Vitual Private Network (VPN)</h1>
+            <label for="option1">Escolha o país a se conectar: </label>
+            <br>
+            <select id="option1">
+                <option value="United States" selected>United States</option>
+                <option value="China">China </option>
+                <option value="Japan">Japan </option>
+                <option value="Russia">Russia </option>
+            </select>
+            <br>
+            <input type="button" value="Connect" onclick="vpn()" id="covpn">
+            <input type="button" value="Disconnect" onclick="vpnd()" id="divpn">
         </div>
     </div>
 
