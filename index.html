@@ -28,18 +28,19 @@
         <p>Port</p>
         <input type="text" name="" id="port" class="pad1">
         <br>
-        <input type="button" value="Attack" class="make1" onclick="ddosattack()">
         <br>
         <textarea id="cmddos" spellcheck="false" disabled>script started 
 waiting for ip and port...
         </textarea>
+        <br>
+        <input type="button" value="Attack" class="make1" onclick="ddosattack()">
         <div class="aviso">
             <p>&#x1F53A; It is not possible to stop the script execution once it has started, only when 5000 bots have been injected into the server.</p>
         </div>
 
         <div id="two">
             <h1>Vitual Private Network (VPN)</h1>
-            <label for="option1">Escolha o país a se conectar: </label>
+            <label for="option1">Choose the country to connect: </label>
             <br>
             <select id="option1">
                 <option value="United States" selected>United States</option>
@@ -50,6 +51,82 @@ waiting for ip and port...
             <br>
             <input type="button" value="Connect" onclick="vpn()" id="covpn">
             <input type="button" value="Disconnect" onclick="vpnd()" id="divpn">
+        </div>
+
+        <div id="tree">
+            <h1>Bitcoin Mining</h1>
+            <label>
+                <input type="checkbox" name="" id="check1">
+                Force the gpu to maximum (Warning: danger of overheating)
+                
+                <br>
+                <br>
+                <label>Select Mining Engine: </label>
+                <br>
+                <select>
+                    <option value="United States" selected>Standard</option>
+                    <option value="China">(empty) </option>
+                    <option value="Japan">(empty) </option>
+                    <option value="Russia">(empty) </option>
+                </select>
+
+                <br>
+                <br>
+                <label>Select Mining Pool: </label>
+                <br>
+                <select>
+                    <option value="United States" selected>AntPool</option>
+                    <option value="China">Slush Pool </option>
+                    <option value="Japan">F2Pool </option>
+                </select>
+
+                <br>
+                <br>
+                <label>Select Mining Mode: </label>
+                <br>
+                <select>
+                    <option value="United States" selected>Solo Mining</option>
+                    <option value="Japan">Pool Mining </option>
+                    <option></option>
+                </select>
+
+                <br>
+                <br>
+                <label>Select Cryptocurrency: </label>
+                <br>
+                <select>
+                    <option value="United States" selected>Ethereum (ETH)</option>
+                    <option value="Japan">Bitcoin (BTC) </option>
+                    <option value="Japan">Litecoin (LTC) </option>
+                    <option value="Japan">Dogecoin (DOGE) </option>
+                </select>
+
+                <br>
+                <br>
+                <label>Network Settings: </label>
+                <br>
+                <select>
+                    <option value="United States" selected>Use Proxy (For Blocked Regions)</option>
+                    <option value="Japan">Enable/Disable SSL Encryption </option>
+                </select>
+
+                <br>
+                <br>
+                <label>Set Payout Threshold: </label>
+                <br>
+                <select>
+                    <option value="United States" selected>0.001 BTC (Daily)</option>
+                    <option value="Japan">0.01 BTC (Weekly) </option>
+                    <option value="Japan">0.1 BTC (Monthly) </option>
+                </select>
+                
+                <br><br>
+                <textarea id="cmdbit" spellcheck="false" disable>script started</textarea>
+                <br>
+                <input type="button" value="Start mining" id="startmining" onclick="startmining()">
+                <input type="button" value="Stop mining" id="stopmining" onclick="stopmining()">
+
+            </label>
         </div>
     </div>
 

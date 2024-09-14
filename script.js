@@ -4,6 +4,7 @@ let port = document.querySelector('#port')
 let cmddos = document.querySelector('#cmddos')
 
 let contadorint1 = 0
+let contadorint2 = 0
 
 const listport = [
     "21",   // FTP (File Transfer Protocol)
@@ -40,6 +41,20 @@ let vpnstatus = false
 
 let divpn = document.querySelector('#divpn')
 
+let cmdbit = document.querySelector('#cmdbit')
+
+let idintbit
+
+const frasesminerando = [
+    "New job received: diff=2500 target=0x00000fabc1234abcd...",
+    "Mining at 450 H/s",
+    "Share accepted. Difficulty: 2500, Block: 643721, Elapsed: 0.65s",
+    "Share rejected: stale share detected.",
+    "Hashrate: 452 H/s, Accepted: 14, Rejected: 2, Pool: pool.address.com",
+    "Current Balance: 0.00000000 coins"
+]
+
+let stopminig = document.querySelector('#stopmining')
 
 
 bitcoin.focus()
@@ -154,4 +169,47 @@ function vpnd(){
     setTimeout(()=>{
         alert('disconnected from private connection.')
     },2000)
+}
+
+function startmining(){
+    cmdbit.value = 'Initializing Miner...'
+    setTimeout(()=>{
+        cmdbit.value = cmdbit.value + '\nConnecting to pool: stratum+tcp://pool.address.com:3333'
+
+        setTimeout(()=>{
+            cmdbit.value = cmdbit.value + '\n\nUsing CPU/GPU: Standard'
+        },500)
+
+        setTimeout(()=>{
+            cmdbit.value = cmdbit.value + '\nLoading configuration from token.key'
+        },500)
+    }, 500)
+
+    idintbit = setInterval(()=>{
+        stopminig.style.display = 'inline'
+
+        //Randomizando frase
+        let nlet = randint(0, 5)
+
+        if(nlet == 5){
+            cmdbit.style.color = 'yellow'
+        }else if(nlet == 3){
+            cmdbit.style.color = 'red'
+        }else{
+            cmdbit.style.color = '#029702'
+        }
+
+        let frase = frasesminerando[nlet]
+
+        cmdbit.value = cmdbit.value + `\n\n${frase}`
+        contadorint2++
+
+        cmdbit.scrollTop = cmdbit.scrollHeight
+    }, randint(200, 1000))
+}
+
+function stopmining(){
+    cmdbit.style.color = '#029702'
+    cmdbit.value = 'Current Balance: 0.00000000 coins\nclosed.'
+    clearInterval(idintbit)
 }

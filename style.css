@@ -4,7 +4,9 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+
+    user-select: none;
 }
 
 input[type='text']{
@@ -77,6 +79,15 @@ input[type='text']{
     font-family: 'Courier New', Courier, monospace;
 }
 
+#cmdbit{
+    width: 340px;
+    height: 240px;
+    background-color: black;
+    color: #029702;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .aviso{
     background-color: rgba(255, 0, 0, 0.452);
     padding: 3px;
@@ -92,7 +103,7 @@ input[type='text']{
     color: red;
 }
 
-#two select{
+select{
     width: 165px;
     height: 40px;
     cursor: pointer;
@@ -101,6 +112,7 @@ input[type='text']{
     border: 0;
     border-radius: 5px;
 }
+
 
 #two input[type='button']{
     width: 80px;
@@ -138,4 +150,42 @@ input[type='text']{
 
 #covpn:active{
     background-color: rgb(63, 63, 209);
+}
+
+#tree input[type='button']{
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#startmining{
+    background-color: #3f3fd1;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+#startmining:hover{
+    background-color: rgb(13, 13, 114);
+}
+
+#startmining:active{
+    background-color: #3f3fd1;
+}
+
+#stopmining{
+    color: white;
+    background-color: #9c0505;
+    border: 0;
+    border-radius: 5px;
+    display: none;
+}
+
+#stopmining:hover{
+    background-color: #5a0101;
+}
+
+#stopmining:active{
+    background-color: #9c0505;
 }
